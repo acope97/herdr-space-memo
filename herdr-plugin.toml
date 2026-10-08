@@ -1,0 +1,23 @@
+id = "acope.space-memo"
+name = "Space Memo"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Space별 참고 메모를 기록하고 사이드바 Spaces 아래에 상시 표시하는 플러그인"
+platforms = ["windows", "linux", "macos"]
+
+[[startup]]
+command = ["node", "src/startup.js"]
+
+[[panes]]
+id = "edit"
+title = "Space Memo Editor"
+placement = "popup"
+width = "75%"
+height = "65%"
+command = ["node", "src/editor.js"]
+
+[[actions]]
+id = "edit-memo"
+title = "Edit Space Memo"
+contexts = ["workspace"]
+command = ["node", "src/editor.js"]

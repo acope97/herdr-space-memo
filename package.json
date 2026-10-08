@@ -1,0 +1,21 @@
+{
+  "name": "herdr-space-memo",
+  "version": "0.1.0",
+  "description": "Space-specific persistent notes plugin for Herdr sidebar",
+  "type": "module",
+  "main": "src/editor.js",
+  "scripts": {
+    "test": "node src/test.js",
+    "startup": "node src/startup.js",
+    "edit": "node src/editor.js"
+  },
+  "keywords": [
+    "herdr",
+    "herdr-plugin",
+    "memo",
+    "spaces",
+    "workspace"
+  ],
+  "author": "acope",
+  "license": "MIT"
+}
